@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAPECHANGE with SOHIL</title>
+</head>
+<body  >
+    <div style="background-color:red;width: 800px;margin-left: 20%;border-style: double;">
+    <h1 style="margin-left: 40%;">Shape Change with colours</h1>
+    <div id="shape" style="margin-left: 40%;height: 100px;width: 200px;background-color: aqua;"></div>
+    <br><br>
+    <button onclick="rect()" style="background-color:greenyellow;margin-left: 35%;width: 80px;height: 50px;border-style:dotted;">Rectangle</button>
+    <button onclick="square()" style="background-color:pink;margin-left: 5%;width: 80px;height: 80px;border-style:dotted;">Square</button>
+    <button onclick="circle()" style="background-color: green;margin-left: 5%;width: 70px;height: 70px;border-radius: 50%;border-style:dotted;">Circle</button>
+</body>
+<script>
+    function rect()
+    {
+        document.getElementById('shape').style['width']='200px';
+        document.getElementById('shape').style['background-color']='blue';
+        document.getElementById('shape').style['border-radius']='0';
+        
+    }
+    function square()
+    {
+        document.getElementById('shape').style['width']='100px';
+        document.getElementById('shape').style['background-color']='yellow';
+        document.getElementById('shape').style['border-radius']='0';
+    }
+    function circle()
+    {
+        document.getElementById('shape').style['width']='100px';
+        document.getElementById('shape').style['background-color']='green';
+        document.getElementById('shape').style['border-radius']='50%';
+    }
+</script>
+</div>
+</html>
